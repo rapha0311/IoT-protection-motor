@@ -31,3 +31,5 @@ Sistema de monitoramento e medição de consumo elétrico em tempo real desenvol
 2. Clique no botão **Play** para iniciar a simulação.
 3. Altere os valores nos dois potenciômetros para simular variações de Tensão e Corrente.
 4. Observe os dados sendo atualizados no Monitor Serial e no Dashboard do ThingsBoard Cloud.
+
+![Dashboard](Medidor-Energético.png)
