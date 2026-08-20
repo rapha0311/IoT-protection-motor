@@ -21,8 +21,8 @@ Sistema de monitoramento e medição de consumo elétrico em tempo real desenvol
 ---
 
 ## 🔗 Links do Projeto
-* 🚀 **Simulação Interativa:** [Executar no Wokwi](https://wokwi.com/projects/472703937958391809)
-* 📊 **Dashboard em Tempo Real:** [Acessar ThingsBoard Cloud](https://thingsboard.cloud/dashboards/all/1c133120-9b1e-11f1-83d2-798c305070d0)
+1. 🎮 **Simulação Ativa:** Teste o firmware interativamente pelo [Wokwi](https://wokwi.com/projects/472703937958391809).
+2. 📈 **Dashboard no ThingsBoard:** *(![Monitor de Energia em Tempo Real](simulacao.mp4))*.
 
 ---
 
