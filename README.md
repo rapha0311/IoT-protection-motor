@@ -1,14 +1,25 @@
-# ⚡ Monitor de Energia Elétrica e Telemetria IoT (ESP32 + ThingsBoard)
+# ⚡ Sistema IoT de Monitoramento de Energia Elétrica
 
-Sistema de monitoramento e medição de consumo elétrico em tempo real desenvolvido com ESP32, comunicação via protocolo MQTT e visualização na nuvem com o ThingsBoard Cloud.
+> Monitoramento de tensão, corrente, potência e estimativa de custo utilizando ESP32, MQTT e ThingsBoard Cloud.
 
 ---
 
-## 📌 Funcionalidades
-* **Leitura de Sensores:** Leitura de sinais analógicos simulando sensores de tensão (V) e corrente (A).
-* **Edge Computing:** Processamento local no ESP32 para cálculo de potência ativa (W) e estimativa de custo por hora (R$).
-* **Telemetria MQTT:** Envio contínuo de payloads em JSON para o broker do ThingsBoard Cloud.
-* **Dashboard Interativo:** Painel em tempo real com medidores digitais (*gauges*) e gráfico de histórico temporal.
+## 📌 Visão Geral
+
+O projeto implementa um sistema de monitoramento energético baseado em ESP32.
+
+O dispositivo realiza a aquisição de sinais de tensão e corrente, processa os dados localmente e calcula grandezas elétricas para posterior transmissão via MQTT ao ThingsBoard Cloud.
+
+### Principais funcionalidades
+
+- Aquisição de sinais de tensão e corrente;
+- Cálculo de potência ativa;
+- Estimativa de custo de energia;
+- Processamento local no ESP32;
+- Publicação de telemetria via MQTT;
+- Envio de dados estruturados em JSON;
+- Dashboard para visualização em tempo real;
+- Histórico das grandezas monitoradas.
 
 ---
 
@@ -17,6 +28,16 @@ Sistema de monitoramento e medição de consumo elétrico em tempo real desenvol
 * **Simulação:** Wokwi Simulator
 * **Protocolo de Comunicação:** MQTT (Biblioteca `PubSubClient`)
 * **Plataforma Cloud:** ThingsBoard Cloud
+
+---
+
+## 🧠 Processamento Edge
+
+O ESP32 atua como dispositivo de borda (*edge device*), realizando o processamento inicial dos dados antes do envio para a nuvem.
+
+Fluxo simplificado:
+
+Sensores → ESP32 → Processamento → MQTT → ThingsBoard → Dashboard
 
 ---
 
@@ -35,3 +56,34 @@ Sistema de monitoramento e medição de consumo elétrico em tempo real desenvol
 4. Observe os dados sendo atualizados no Monitor Serial e no Dashboard do ThingsBoard Cloud.
 
 ![Dashboard](Medidor-Energetico.png)
+
+## 🏗️ Arquitetura do Sistema
+
+```text
+Sinais de tensão/corrente
+          ↓
+        ESP32
+          ↓
+   Processamento Edge
+          ↓
+      MQTT / JSON
+          ↓
+  ThingsBoard Cloud
+          ↓
+      Dashboard
+```
+
+---
+
+```markdown
+## ⚠️ Limitações do Protótipo
+```
+
+Este projeto utiliza sinais simulados no ambiente Wokwi para representar as medições de tensão e corrente.
+
+O sistema não deve ser utilizado como instrumento de medição elétrica real sem sensores apropriados, condicionamento de sinal, calibração e validação metrológica.
+
+O objetivo do projeto é demonstrar conceitos de aquisição de dados, processamento Edge, comunicação MQTT e supervisão em nuvem.
+
+
+---
