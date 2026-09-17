@@ -273,20 +273,20 @@ A simulação permite observar a interação entre:
 ---
 
 ## 📐 Diagramas
-Arquitetura do Sistema
-
+### Arquitetura do Sistema
+![Arquitetura IoT](src/docs/diagrama-arquitetura.jpg)
 ---
 
 ### Esquemático do Circuito
-
+![Esquemático no Fritzing/Wokwi](src/docs/diagrama-esquemático-circuito.jpg)
 ---
 
 ### Motor em Funcionamento
-
+![Circuito de Força e comando/CadeSimu - Motor em funcionamento](src/docs/motor-ligado.gif)
 ---
 
 ### Motor em Condição de Falha
-
+![Circuito de Força e comando/CadeSimu - Motor em falha](src/docs/motor-em-falha.gif)
 ---
 
 ## 🔄 Fluxo Geral
@@ -412,3 +412,4 @@ Novas melhorias e evoluções podem ser implementadas posteriormente.
 ### Raphael Alves Ferreira
 
 Desenvolvimento de soluções em **Automação Industrial, IoT e sistemas embarcados.**
+- [GitHub](https://github.com/rapha0311)
