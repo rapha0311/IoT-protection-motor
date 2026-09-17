@@ -260,7 +260,7 @@ Motor trifásico
 
 O projeto possui uma simulação desenvolvida no Wokwi, permitindo testar o funcionamento do firmware e observar a resposta do sistema.
 
-🎮 Acessar Simulação Interativa no Wokwi
+👉 **[Acessar Simulação Interativa no Wokwi](https://wokwi.com/projects/472917469255290881)**
 
 A simulação permite observar a interação entre:
 
